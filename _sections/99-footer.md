@@ -1,0 +1,20 @@
+---
+title: Footer
+footer: true
+order: 99
+no_container: true
+---
+<div class="footer-grid">
+  <div>
+    <h3>Lab Name</h3>
+    <p>Short one-line motto for the footer.</p>
+  </div>
+  <div>
+    <h3>Quick Links</h3>
+    <p>Admissions - Collaborate - Media</p>
+  </div>
+  <div>
+    <h3>Location</h3>
+    <p>City, Country</p>
+  </div>
+</div>

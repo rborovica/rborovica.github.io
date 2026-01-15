@@ -1,5 +1,58 @@
+---
+layout: null
+---
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>My Page</title></head>
-<body><h1>Hello GitHub Pages</h1></body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lab Homepage</title>
+    <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="nav-wrap">
+          <a class="brand" href="#home">Your Lab Name</a>
+          <nav>
+            {% assign nav_sections = site.sections | where: "nav", true | sort: "order" %}
+            {% for section in nav_sections %}
+              <a href="#{{ section.anchor }}">
+                {{ section.nav_title | default: section.title }}
+              </a>
+            {% endfor %}
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        {% assign content_sections = site.sections | where_exp: "section", "section.footer != true" | sort: "order" %}
+        {% for section in content_sections %}
+          {% assign section_class = section.section_class | default: "" %}
+          <section id="{{ section.anchor }}"{% if section_class != "" %} class="{{ section_class }}"{% endif %}>
+            {% if section.no_container %}
+              {{ section.content }}
+            {% else %}
+              <div class="container">
+                {{ section.content }}
+              </div>
+            {% endif %}
+          </section>
+        {% endfor %}
+      </main>
+
+      <footer>
+        {% assign footer_sections = site.sections | where: "footer", true | sort: "order" %}
+        {% assign footer = footer_sections | first %}
+        {% if footer %}
+          {{ footer.content }}
+        {% else %}
+          <div class="container">
+            <p>Footer content missing.</p>
+          </div>
+        {% endif %}
+      </footer>
+    </div>
+    <script src="{{ "/main.js" | relative_url }}"></script>
+  </body>
 </html>
