@@ -1,9 +1,8 @@
+---
+---
+{% assign section = site.sections | where: "anchor", "publications" | first %}
+{% if section %}
 <div class="container">
-  <h2>Publications</h2>
-  <p>Add papers, preprints, and software releases here.</p>
-  <div class="list">
-    <div class="list-item">2024 - Article title, Journal name, DOI link.</div>
-    <div class="list-item">2023 - Article title, Journal name, DOI link.</div>
-    <div class="list-item">2022 - Article title, Journal name, DOI link.</div>
-  </div>
+  {{ section.content }}
 </div>
+{% endif %}

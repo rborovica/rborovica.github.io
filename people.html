@@ -1,78 +1,54 @@
+---
+layout: null
+anchor: people
+---
+{% assign section = site.sections | where: "anchor", page.anchor | first %}
+{% assign page_title = section.title | default: page.title | default: "People" %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>People | Lab Homepage</title>
+    <title>{{ page_title }} | Lab Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
       <header>
         <div class="nav-wrap">
-          <a class="brand" href="index.html">Your Lab Name</a>
+          <a class="brand" href="index.html">Danais</a>
+          {% assign nav_sections = site.sections | where: "nav", true | sort: "order" %}
           <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="people.html" class="active">People</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact.html">Contact</a>
+            {% for nav_section in nav_sections %}
+              {% if nav_section.page %}
+                {% assign href = nav_section.page %}
+              {% else %}
+                {% assign href = "index.html#" | append: nav_section.anchor %}
+              {% endif %}
+              <a href="{{ href }}"{% if nav_section.anchor == page.anchor %} class="active"{% endif %}>
+                {{ nav_section.nav_title | default: nav_section.title }}
+              </a>
+            {% endfor %}
           </nav>
         </div>
       </header>
 
       <main>
-        <section class="hero">
-          <div class="container">
-            <h1>People</h1>
-            <p>
-              List your lab members here. Add photos and bios whenever you are
-              ready.
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <h2>Team</h2>
-            <div class="card-grid">
-              <article class="card">
-                <h3>Principal Investigator</h3>
-                <p>Short bio line and contact details.</p>
-              </article>
-              <article class="card">
-                <h3>Graduate Students</h3>
-                <p>Names, roles, and research interests.</p>
-              </article>
-              <article class="card">
-                <h3>Postdocs</h3>
-                <p>Names and focus areas.</p>
-              </article>
-              <article class="card">
-                <h3>Collaborators</h3>
-                <p>External collaborators or partner labs.</p>
-              </article>
+        {% if section %}
+          <section>
+            <div class="container">
+              {{ section.content | replace_first: "<h2", "<h1" | replace_first: "</h2>", "</h1>" }}
             </div>
-          </div>
-        </section>
+          </section>
+        {% endif %}
       </main>
 
       <footer>
-        <div class="footer-grid">
-          <div>
-            <h3>Lab Name</h3>
-            <p>Short one-line motto for the footer.</p>
-          </div>
-          <div>
-            <h3>Quick Links</h3>
-            <p>Admissions · Collaborate · Media</p>
-          </div>
-          <div>
-            <h3>Location</h3>
-            <p>City, Country</p>
-          </div>
-        </div>
+        {% assign footer_sections = site.sections | where: "footer", true | sort: "order" %}
+        {% assign footer = footer_sections | first %}
+        {% if footer %}
+          {{ footer.content }}
+        {% endif %}
       </footer>
     </div>
   </body>

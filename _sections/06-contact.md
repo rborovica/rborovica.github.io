@@ -2,11 +2,12 @@
 title: Contact
 anchor: contact
 nav: true
-order: 6
+order: 8
+page: contact.html
 ---
 ## Contact
 
-Department, University, Building, City.
+School of Computing and Information Systems, Faculty of Engineering and Information Technology, The University of Melbourne.
 
 <div class="card-grid">
   <article class="card">
@@ -19,6 +20,6 @@ Department, University, Building, City.
   </article>
   <article class="card">
     <h3>Location</h3>
-    <p>City, Country</p>
+    <p>700 Swanston Street, Carlton, Melbourne.</p>
   </article>
 </div>

@@ -2,27 +2,192 @@
 title: People
 anchor: people
 nav: true
-order: 4
+order: 5
+page: people.html
 ---
 ## People
 
-List your lab members and collaborators here.
+<div class="people-lead">
+  <a class="person-card lead" href="https://renata.borovica-gajic.com/" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/renata.jpg" alt="Renata Borovica-Gajic" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">RB</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Renata Borovica-Gajic</h3>
+      <p class="person-title">Principal Investigator</p>
+    </div>
+  </a>
+</div>
 
-<div class="card-grid">
-  <article class="card">
-    <h3>Principal Investigator</h3>
-    <p>Short bio line and contact details.</p>
-  </article>
-  <article class="card">
-    <h3>Graduate Students</h3>
-    <p>Names, roles, and research interests.</p>
-  </article>
-  <article class="card">
-    <h3>Postdocs</h3>
-    <p>Names and focus areas.</p>
-  </article>
-  <article class="card">
-    <h3>Collaborators</h3>
-    <p>External collaborators or partner labs.</p>
-  </article>
+<h3 class="people-group">Current Members</h3>
+<div class="people-grid">
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/guanli-liu.jpg" alt="Guanli Liu" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">GL</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Guanli Liu</h3>
+      <p class="person-title">Postdoc</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/nadeeshan-dissanayake.jpg" alt="Nadeeshan Dissanayake" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">ND</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Nadeeshan Dissanayake</h3>
+      <p class="person-title">PhD Student (2024-)</p>
+      <p class="person-note">Co-supervised with S. Karunasekera and E. Tanin.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/dinuka-de-zoysa.jpg" alt="Dinuka de Zoysa" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">DZ</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Dinuka de Zoysa</h3>
+      <p class="person-title">PhD Student (2024-)</p>
+      <p class="person-note">Co-supervised with J. Bailey.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/david-adams.jpg" alt="David Adams" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">DA</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">David Adams</h3>
+      <p class="person-title">PhD Student (2024-)</p>
+      <p class="person-note">Co-supervised with N. Lipovetzky.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/lankadinee-rathuwadu.jpg" alt="Lankadinee Rathuwadu" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">LR</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Lankadinee Rathuwadu</h3>
+      <p class="person-title">PhD Student (2023-)</p>
+      <p class="person-note">Co-supervised with C. Leckie.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/wentao-gao.jpg" alt="Wentao Gao" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">WG</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Wentao Gao</h3>
+      <p class="person-title">PhD Student (2023-)</p>
+      <p class="person-note">Co-supervised with T. Pham.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/dimuthu-kariyawasan.jpg" alt="Dimuthu Kariyawasan" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">DK</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Dimuthu Kariyawasan</h3>
+      <p class="person-title">PhD Student (2022-)</p>
+      <p class="person-note">Co-supervised with S. Karunasekera.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/xinling-shen.jpg" alt="Xinling Shen" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">XS</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Xinling Shen</h3>
+      <p class="person-title">PhD Student (2022-)</p>
+      <p class="person-note">Co-supervised with S. Winter.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/farzaneh-zirak.jpg" alt="Farzaneh Zirak" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">FZ</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Farzaneh Zirak</h3>
+      <p class="person-title">PhD Student (2022-)</p>
+      <p class="person-note">Co-supervised with F. Choudhury.</p>
+    </div>
+  </a>
+</div>
+
+<h3 class="people-group">Completed PhD Students</h3>
+<div class="people-grid">
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/yixin-xu.jpg" alt="Yixin Xu" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">YX</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Yixin Xu</h3>
+      <p class="person-title">PhD Student (2017-2021)</p>
+      <p class="person-note">Co-supervised with J. Qi and L. Kulik. First position: Singapore Management University, Lecturer.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/malinga-perera.jpg" alt="Malinga Perera" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">MP</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Malinga Perera</h3>
+      <p class="person-title">PhD Student (2018-2023)</p>
+      <p class="person-note">Co-supervised with B. Rubinstein. First position: Amazon Web Services.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/bastian-oetomo.jpg" alt="Bastian Oetomo" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">BO</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Bastian Oetomo</h3>
+      <p class="person-title">PhD Student (2018-2023)</p>
+      <p class="person-note">Co-supervised with B. Rubinstein. First position: University of Melbourne, Research Fellow.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/udesh-gunarathna.jpg" alt="Udesh Gunarathna" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">UG</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Udesh Gunarathna</h3>
+      <p class="person-title">PhD Student (2018-2023)</p>
+      <p class="person-note">Co-supervised with S. Karunasekera and E. Tanin. First position: Amazon Web Services.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/renlord-yang.jpg" alt="Renlord Yang" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">RY</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Renlord Yang</h3>
+      <p class="person-title">PhD Student (2018-2023)</p>
+      <p class="person-note">Co-supervised with U. Parampalli and T. Murray. First position: Apple.</p>
+    </div>
+  </a>
+  <a class="person-card" href="#" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="images/people/rajesh-chittor-sundaram.jpg" alt="Rajesh Chittor Sundaram" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">RCS</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">Rajesh Chittor Sundaram</h3>
+      <p class="person-title">PhD Student (2018-2023)</p>
+      <p class="person-note">Co-supervised with M. Tomko and E. Naghizade. First position: University of Melbourne, Associate Lecturer.</p>
+    </div>
+  </a>
 </div>

@@ -1,22 +1,8 @@
+---
+---
+{% assign section = site.sections | where: "anchor", "people" | first %}
+{% if section %}
 <div class="container">
-  <h2>People</h2>
-  <p>List your lab members and collaborators here.</p>
-  <div class="card-grid">
-    <article class="card">
-      <h3>Principal Investigator</h3>
-      <p>Short bio line and contact details.</p>
-    </article>
-    <article class="card">
-      <h3>Graduate Students</h3>
-      <p>Names, roles, and research interests.</p>
-    </article>
-    <article class="card">
-      <h3>Postdocs</h3>
-      <p>Names and focus areas.</p>
-    </article>
-    <article class="card">
-      <h3>Collaborators</h3>
-      <p>External collaborators or partner labs.</p>
-    </article>
-  </div>
+  {{ section.content }}
 </div>
+{% endif %}

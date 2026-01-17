@@ -6,15 +6,15 @@ no_container: true
 ---
 <div class="footer-grid">
   <div>
-    <h3>Lab Name</h3>
-    <p>Short one-line motto for the footer.</p>
+    <h3>Danais</h3>
+    <p>Data Nexus for Analytics & Intelligent Systems.</p>
   </div>
   <div>
     <h3>Quick Links</h3>
-    <p>Admissions - Collaborate - Media</p>
+    <p>Prospective Students - Industry Partners - Media</p>
   </div>
   <div>
     <h3>Location</h3>
-    <p>City, Country</p>
+    <p>School of Computing and Information Systems, Faculty of Engineering and Information Technology, The University of Melbourne.</p>
   </div>
 </div>

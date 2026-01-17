@@ -9,11 +9,15 @@ no_container: true
 ---
 <div class="container hero-grid">
   <div>
-    <div class="hero-tag">Systems / Biology / Design</div>
-    <h1>We build tools that turn molecular data into decisions.</h1>
+    <div class="hero-tag">Data Integration / Analytic Discovery / Intelligent Systems</div>
+    <h1>We build data systems that turn complex information into actionable insight.</h1>
     <p>
-      This hero module lives in _sections/01-hero.md. Update it without touching
-      the main page template.
+      The Danais Lab (Data Nexus for Analytics & Intelligent Systems) advances
+      foundational and applied research at the intersection of data integration,
+      analytic discovery, and intelligent systems engineering. We develop
+      next-generation database architectures, scalable data infrastructure, and
+      analytic frameworks that automate the transformation of complex
+      information into actionable insight.
     </p>
     <div class="hero-actions">
       <a class="button primary" href="#projects">Explore Projects</a>

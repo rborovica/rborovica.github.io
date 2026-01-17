@@ -3,23 +3,25 @@ title: About
 anchor: about
 nav: true
 order: 2
+page: about.html
 ---
 ## About the Lab
 
-Use this module for the lab mission, values, and background. Edit this file to
-update the About section without touching index.html.
+The Danais Lab focuses on data integration, analytic discovery, and intelligent
+systems engineering. We build next-generation database architectures and
+scalable data infrastructure that transform heterogeneous data into insight.
 
 <div class="card-grid">
   <article class="card">
     <h3>Vision</h3>
-    <p>What you want to change in the field.</p>
+    <p>Unlock value from heterogeneous data sources across domains.</p>
   </article>
   <article class="card">
     <h3>Approach</h3>
-    <p>Your blend of experiments, computation, and collaboration.</p>
+    <p>Design database architectures and analytic frameworks that connect integration to automated discovery.</p>
   </article>
   <article class="card">
     <h3>Values</h3>
-    <p>How you work together and mentor team members.</p>
+    <p>Grounded in robust systems design and data science with a focus on practical impact.</p>
   </article>
 </div>
