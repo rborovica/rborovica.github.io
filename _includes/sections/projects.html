@@ -1,0 +1,11 @@
+{% assign projects = site.data.projects %}
+<h2>{{ projects.heading }}</h2>
+<p>{{ projects.intro }}</p>
+<div class="card-grid">
+  {% for card in projects.projects %}
+    <article class="card">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+    </article>
+  {% endfor %}
+</div>

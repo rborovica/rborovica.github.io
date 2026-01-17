@@ -5,37 +5,4 @@ nav: true
 order: 4
 page: research.html
 ---
-## Projects
-
-Selected projects from our research program.
-
-<div class="card-grid">
-  <article class="card">
-    <h3>Learned indexes with Machine Learning</h3>
-    <p>ML models approximate data distributions to replace traditional indexes with faster retrieval and lower memory.</p>
-  </article>
-  <article class="card">
-    <h3>Database performance tuning with Multi-armed Bandits</h3>
-    <p>Automated physical design tuning for ad hoc workloads, with statistical guarantees on design quality.</p>
-  </article>
-  <article class="card">
-    <h3>Data-driven traffic flow optimization with Reinforcement Learning</h3>
-    <p>Algorithms for ride-sharing dispatch and road network configuration that reduce congestion and wait time.</p>
-  </article>
-  <article class="card">
-    <h3>Improving data quality through domain-driven imputation</h3>
-    <p>Use spatial and domain properties to impute missing values and improve real-world data reliability.</p>
-  </article>
-  <article class="card">
-    <h3>Cheap data analysis with Skipper</h3>
-    <p>Cold-storage query processing with cache management and I/O scheduling to cut analytics cost.</p>
-  </article>
-  <article class="card">
-    <h3>Predictable query performance with Smooth Scan</h3>
-    <p>Runtime morphing between access paths to avoid bad plans and stabilize performance.</p>
-  </article>
-  <article class="card">
-    <h3>Fast data exploration with NoDB</h3>
-    <p>Query raw files without loading; build indexes and caches incrementally from query feedback.</p>
-  </article>
-</div>
+{% include sections/projects.html %}

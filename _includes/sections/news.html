@@ -1,0 +1,7 @@
+{% assign news = site.data.news %}
+<h2>{{ news.heading }}</h2>
+<div class="list">
+  {% for item in news.items %}
+    <div class="list-item">{{ item }}</div>
+  {% endfor %}
+</div>

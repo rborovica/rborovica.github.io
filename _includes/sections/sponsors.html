@@ -1,0 +1,13 @@
+{% assign sponsors = site.data.sponsors %}
+<h2>{{ sponsors.heading }}</h2>
+
+<div class="sponsor-grid">
+  {% for sponsor in sponsors.sponsors %}
+    <a class="card card-link sponsor-card" href="{{ sponsor.url }}" target="_blank" rel="noopener">
+      <h3>{{ sponsor.name }}</h3>
+      <div class="sponsor-logo">
+        <img src="{{ sponsor.logo }}" alt="{{ sponsor.alt }}" loading="lazy" />
+      </div>
+    </a>
+  {% endfor %}
+</div>

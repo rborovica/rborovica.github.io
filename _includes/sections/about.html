@@ -1,0 +1,11 @@
+{% assign about = site.data.about %}
+<h2>{{ about.heading }}</h2>
+<p>{{ about.body }}</p>
+<div class="card-grid">
+  {% for card in about.cards %}
+    <article class="card">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+    </article>
+  {% endfor %}
+</div>

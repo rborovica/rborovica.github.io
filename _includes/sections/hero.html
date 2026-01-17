@@ -1,0 +1,21 @@
+{% assign hero = site.data.hero %}
+<div class="container hero-grid">
+  <div>
+    <div class="hero-tag">{{ hero.tagline }}</div>
+    <h1>{{ hero.heading }}</h1>
+    <p>{{ hero.body }}</p>
+    <div class="hero-actions">
+      {% for action in hero.actions %}
+        <a class="button {{ action.style }}" href="{{ action.url }}">{{ action.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="stat-grid">
+    {% for stat in hero.stats %}
+      <div class="stat">
+        <span>{{ stat.value }}</span>
+        <span>{{ stat.label }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>

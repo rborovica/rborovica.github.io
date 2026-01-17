@@ -1,0 +1,13 @@
+{% assign contact = site.data.contact %}
+<h2>{{ contact.heading }}</h2>
+
+<p>{{ contact.intro }}</p>
+
+<div class="card-grid">
+  {% for card in contact.cards %}
+    <article class="card">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+    </article>
+  {% endfor %}
+</div>

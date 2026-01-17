@@ -1,0 +1,36 @@
+{% assign people = site.data.people %}
+<h2>{{ people.heading }}</h2>
+
+<div class="people-lead">
+  <a class="person-card lead" href="{{ people.lead.url }}" target="_blank" rel="noopener">
+    <div class="person-photo">
+      <img src="{{ people.lead.image }}" alt="{{ people.lead.name }}" loading="lazy" onerror="this.style.display='none'" />
+      <span aria-hidden="true">{{ people.lead.initials }}</span>
+    </div>
+    <div class="person-meta">
+      <h3 class="person-name">{{ people.lead.name }}</h3>
+      <p class="person-title">{{ people.lead.title }}</p>
+    </div>
+  </a>
+</div>
+
+{% for group in people.groups %}
+  <h3 class="people-group">{{ group.title }}</h3>
+  <div class="people-grid">
+    {% for person in group.people %}
+      <a class="person-card" href="{{ person.url }}" target="_blank" rel="noopener">
+        <div class="person-photo">
+          <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy" onerror="this.style.display='none'" />
+          <span aria-hidden="true">{{ person.initials }}</span>
+        </div>
+        <div class="person-meta">
+          <h3 class="person-name">{{ person.name }}</h3>
+          <p class="person-title">{{ person.title }}</p>
+          {% if person.note %}
+            <p class="person-note">{{ person.note }}</p>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endfor %}

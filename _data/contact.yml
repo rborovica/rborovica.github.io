@@ -1,0 +1,9 @@
+heading: "Contact"
+intro: "School of Computing and Information Systems, Faculty of Engineering and Information Technology, The University of Melbourne."
+cards:
+  - title: "Email"
+    text: "yourname@university.edu"
+  - title: "Join Us"
+    text: "Open positions and how to apply."
+  - title: "Location"
+    text: "700 Swanston Street, Carlton, Melbourne."
