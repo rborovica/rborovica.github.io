@@ -512,23 +512,23 @@ years:
             url: "https://link.springer.com/chapter/10.1007%2F978-3-319-91452-7_15"
           - label: "BibTex"
             url: "http://dblp.uni-trier.de/rec/bibtex/conf/dasfaa/XuQBK18"
-  - year: 2017
-    entries:
-      - venue: "Dagstuhl Reports 7(5)"
-        title: "Robust Performance in Database Query Processing (Dagstuhl Seminar 17222)"
-        authors: "R. Borovica-Gajic, G. Graefe, and A. Lee"
-        links:
-          - label: "PDF"
-            url: "https://renata.borovica-gajic.com/data/dagstuhl17222_2017.pdf"
-          - label: "BibTex"
-            url: "http://dblp.uni-trier.de/rec/bibtex/journals/dagstuhl-reports/Borovica-GajicG17"
-      - venue: "ADMS@VLDB"
-        title: "The five minute rule thirty years later and its impact on the storage hierarchy"
-        authors: "R. Appuswamy, R. Borovica-Gajic, G. Graefe, and A. Ailamaki"
-        links:
-          - label: "PDF"
-            url: "https://renata.borovica-gajic.com/data/adms2017_5minuterule.pdf"
-          - label: "Slides"
-            url: "https://renata.borovica-gajic.com/data/slides/adms2017-5min.pdf"
-          - label: "BibTex"
-            url: "https://dblp.uni-trier.de/rec/bibtex/conf/vldb/AppuswamyBGA17"
+  # - year: 2017
+  #   entries:
+  #     - venue: "Dagstuhl Reports 7(5)"
+  #       title: "Robust Performance in Database Query Processing (Dagstuhl Seminar 17222)"
+  #       authors: "R. Borovica-Gajic, G. Graefe, and A. Lee"
+  #       links:
+  #         - label: "PDF"
+  #           url: "https://renata.borovica-gajic.com/data/dagstuhl17222_2017.pdf"
+  #         - label: "BibTex"
+  #           url: "http://dblp.uni-trier.de/rec/bibtex/journals/dagstuhl-reports/Borovica-GajicG17"
+  #     - venue: "ADMS@VLDB"
+  #       title: "The five minute rule thirty years later and its impact on the storage hierarchy"
+  #       authors: "R. Appuswamy, R. Borovica-Gajic, G. Graefe, and A. Ailamaki"
+  #       links:
+  #         - label: "PDF"
+  #           url: "https://renata.borovica-gajic.com/data/adms2017_5minuterule.pdf"
+  #         - label: "Slides"
+  #           url: "https://renata.borovica-gajic.com/data/slides/adms2017-5min.pdf"
+  #         - label: "BibTex"
+  #           url: "https://dblp.uni-trier.de/rec/bibtex/conf/vldb/AppuswamyBGA17"
