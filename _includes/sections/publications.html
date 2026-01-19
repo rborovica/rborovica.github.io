@@ -7,7 +7,7 @@
       <h3>{{ year.year }}</h3>
       <div class="list list-numbered">
         {% for entry in year.entries %}
-          <div class="list-item"><span class="pub-venue">{{ entry.venue }}</span>. {{ entry.title }}. {{ entry.authors }}.{% if entry.links %}{% for link in entry.links %} <a class="pub-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}{% endif %}{% if entry.note %} {{ entry.note }}{% endif %}</div>
+          <div class="list-item"><span class="pub-venue">{{ entry.venue }}</span> {{ entry.title }}. {{ entry.authors }}.{% if entry.links %}{% for link in entry.links %} <a class="pub-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}{% endif %}{% if entry.note %} {{ entry.note }}{% endif %}</div>
         {% endfor %}
       </div>
     </div>
