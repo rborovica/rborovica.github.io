@@ -10,8 +10,8 @@ groups:
     people:
       - name: "Guanli Liu"
         title: "Postdoc"
-        url: "#"
-        image: "images/people/guanli-liu.jpg"
+        url: "https://liuguanli.github.io/"
+        image: "images/people/guanli-liu.png"
         initials: "GL"
       - name: "Nadeeshan Dissanayake"
         title: "PhD Student (2024-)"
