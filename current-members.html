@@ -1,0 +1,116 @@
+---
+layout: null
+---
+{% assign people = site.data.people %}
+{% assign current_group = people.groups | where: "title", "Current Members" | first %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Current Members | DANAIS Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body.current-members {
+        background: #ffffff;
+      }
+
+      .current-members .page {
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+
+      .current-members .container {
+        max-width: 1600px;
+        padding: 0 24px;
+      }
+
+      .current-members .people-grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .current-members .person-card {
+        padding: 10px;
+        border-radius: 14px;
+      }
+
+      .current-members .person-photo {
+        width: 72px;
+        height: 72px;
+      }
+
+      .current-members .person-card.lead-highlight {
+        border: 2px solid var(--forest);
+        box-shadow: 0 16px 30px rgba(31, 63, 45, 0.22);
+        background: rgba(255, 255, 255, 0.95);
+      }
+
+      @media (max-width: 1400px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(8, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 820px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body class="current-members">
+    <div class="page">
+      <main>
+        <section>
+          <div class="container">
+            <h1>Current Members</h1>
+            {% if current_group %}
+              <div class="people-grid">
+                <div class="person-card lead-highlight">
+                  <div class="person-photo">
+                    <img src="{{ people.lead.image }}" alt="{{ people.lead.name }}" loading="lazy" onerror="this.style.display='none'" />
+                    <span aria-hidden="true">{{ people.lead.initials }}</span>
+                  </div>
+                  <div class="person-meta">
+                    <h3 class="person-name">{{ people.lead.name }}</h3>
+                    <p class="person-title">{{ people.lead.title }}</p>
+                  </div>
+                </div>
+                {% for person in current_group.people %}
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">{{ person.initials }}</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">{{ person.name }}</h3>
+                      <p class="person-title">{{ person.title }}</p>
+                      {% if person.note %}
+                        <p class="person-note">{{ person.note }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% else %}
+              <p>No current members found.</p>
+            {% endif %}
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

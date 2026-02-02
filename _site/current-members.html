@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Current Members | DANAIS Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body.current-members {
+        background: #ffffff;
+      }
+
+      .current-members .page {
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+
+      .current-members .container {
+        max-width: 1600px;
+        padding: 0 24px;
+      }
+
+      .current-members .people-grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .current-members .person-card {
+        padding: 10px;
+        border-radius: 14px;
+      }
+
+      .current-members .person-photo {
+        width: 72px;
+        height: 72px;
+      }
+
+      .current-members .person-card.lead-highlight {
+        border: 2px solid var(--forest);
+        box-shadow: 0 16px 30px rgba(31, 63, 45, 0.22);
+        background: rgba(255, 255, 255, 0.95);
+      }
+
+      @media (max-width: 1400px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(8, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 820px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .current-members .people-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body class="current-members">
+    <div class="page">
+      <main>
+        <section>
+          <div class="container">
+            <h1>Current Members</h1>
+            
+              <div class="people-grid">
+                <div class="person-card lead-highlight">
+                  <div class="person-photo">
+                    <img src="images/people/renata.jpg" alt="Renata Borovica-Gajic" loading="lazy" onerror="this.style.display='none'" />
+                    <span aria-hidden="true">RB</span>
+                  </div>
+                  <div class="person-meta">
+                    <h3 class="person-name">Renata Borovica-Gajic</h3>
+                    <p class="person-title">Director</p>
+                  </div>
+                </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/guanli-liu.png" alt="Guanli Liu" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">GL</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Guanli Liu</h3>
+                      <p class="person-title">Postdoc (2024-)</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/nadeeshan-dissanayake.jpg" alt="Nadeeshan Dissanayake" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">ND</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Nadeeshan Dissanayake</h3>
+                      <p class="person-title">PhD Student (2024-)</p>
+                      
+                        <p class="person-note">Co-supervised with S. Karunasekera and E. Tanin.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/dinuka-de-zoysa.jpg" alt="Dinuka de Zoysa" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">DZ</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Dinuka de Zoysa</h3>
+                      <p class="person-title">PhD Student (2024-)</p>
+                      
+                        <p class="person-note">Co-supervised with J. Bailey.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/david-adams.jpg" alt="David Adams" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">DA</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">David Adams</h3>
+                      <p class="person-title">PhD Student (2024-)</p>
+                      
+                        <p class="person-note">Co-supervised with N. Lipovetzky.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/lankadinee.jpg" alt="Lankadinee Rathuwadu" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">LR</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Lankadinee Rathuwadu</h3>
+                      <p class="person-title">PhD Student (2023-)</p>
+                      
+                        <p class="person-note">Co-supervised with C. Leckie.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/wentao.jpg" alt="Wentao Gao" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">WG</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Wentao Gao</h3>
+                      <p class="person-title">PhD Student (since 2023)</p>
+                      
+                        <p class="person-note">Co-supervised with T. Pham and M. Fu.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/dimuthu-kariyawasan.jpg" alt="Dimuthu Kariyawasan" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">DK</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Dimuthu Kariyawasan</h3>
+                      <p class="person-title">PhD Student (2022-)</p>
+                      
+                        <p class="person-note">Co-supervised with S. Karunasekera.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/xinling-shen.jpg" alt="Xinling Shen" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">XS</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Xinling Shen</h3>
+                      <p class="person-title">PhD Student (2022-)</p>
+                      
+                        <p class="person-note">Co-supervised with S. Winter.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/farzaneh-zirak.jpg" alt="Farzaneh Zirak" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">FZ</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Farzaneh Zirak</h3>
+                      <p class="person-title">PhD Student (2022-)</p>
+                      
+                        <p class="person-note">Co-supervised with F. Choudhury.</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/yiyan-li.jpg" alt="Yiyan Li" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">YL</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Yiyan Li</h3>
+                      <p class="person-title">Visiting PhD Student</p>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="person-card">
+                    <div class="person-photo">
+                      <img src="images/people/kasper-overgaard-mortensen.jpg" alt="Kasper Overgaard Mortensen" loading="lazy" onerror="this.style.display='none'" />
+                      <span aria-hidden="true">KOM</span>
+                    </div>
+                    <div class="person-meta">
+                      <h3 class="person-name">Kasper Overgaard Mortensen</h3>
+                      <p class="person-title">Visiting PhD Student</p>
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

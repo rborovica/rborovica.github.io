@@ -2,6 +2,10 @@ heading: "Publications"
 years:
   - year: 2026
     entries:
+      - venue: "MLSys"
+        title: "Practical Adversarial Multi-Armed Bandits with Sublinear Runtime"
+        authors: "K. Overgaard Mortensen, A. B. Bainson, M. R. Tversted, K. S. Graem, R. Borovica-Gajic, A. Paudice, D. Mottin, and P. Karras"
+        note: "(to appear)"
       - venue: "AAAI"
         title: "Scalable Semi-supervised Community Search via Graph Transformer on Attributed Heterogeneous Information Networks"
         authors: "L. Ding, Z. Zhao, M. Li, Y. Pan, X. Wang, R. Borovica-Gajic"
