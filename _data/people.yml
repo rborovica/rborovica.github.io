@@ -5,18 +5,50 @@ lead:
   url: "https://renata.borovica-gajic.com/"
   image: "images/people/renata.jpg"
   initials: "RB"
+  bio: >-
+    I am an Associate Professor in Data Analytics and ARC DECRA Fellow in the School of Computing and
+    Information Systems (CIS), as well as Associate Dean (Diversity and Inclusion) for the Faculty of
+    Engineering and IT at the University of Melbourne. My research lies at the intersection of database
+    systems, machine learning and artificial intelligence, data-driven optimisation and analytics. To
+    optimize performance and cost of data analytics services, I envision database systems as adaptive
+    self-driving engines able to adjust their query execution strategy at runtime to fit the characteristics
+    of the queries, data and underlying hardware. I am also interested in the topics of scientific data
+    management, data exploration, query optimization, physical database design, data cleaning, and
+    data-driven (traffic) optimization. The quality and impact of my work is recognised with several notable
+    awards, including L'Oreal-UNESCO for Women in Science Fellowship in 2023, 2x Research Excellence Awards
+    (for Early Career Researcher in 2022 and Mid Career Researcher in 2023), 2x Excellence in Teaching and
+    Learning Awards (in 2018 and 2020), Google Research Inclusion Award in 2021, as well as Test of Time
+    Award (at SIGMOD 2022). In 2024, I was recognised as a Victorian Young Tall Poppy, and, in 2025, I was
+    selected as the winner of Women in AI Award for the APAC region (in the DATA category).
 groups:
   - title: "Current Members"
     people:
       - name: "Guanli Liu"
         title: "Postdoc (2024-)"
         url: "https://liuguanli.github.io/"
+        bio: >-
+          I am a Postdoctoral Research Fellow at the University of Melbourne, working on AI for databases—
+          including spatial indexing, reinforcement learning-based query optimization, and LLM applications.
+          My recent research explores the use of space-filling curves for efficient spatial data
+          organization and cost modeling. Previously, I was a Senior Software Engineer at Baidu, and received
+          my M.S. and B.Eng. degrees from Northeastern University in China.
         image: "images/people/guanli-liu.png"
         initials: "GL"
       - name: "Nadeeshan Dissanayake"
         title: "PhD Student (2024-)"
         note: "Co-supervised with S. Karunasekera and E. Tanin."
         url: "https://nadeeshan96.github.io/"
+        bio: >-
+          Intelligent Intersection Management for Improved Traffic Safety: Unpredictable pedestrian
+          behaviour, such as jaywalking, poses a major challenge for safe and efficient traffic signal
+          control at urban intersections. This project aims to fully automate adaptive traffic signal
+          management using deep reinforcement learning with an explicit probabilistic model of pedestrian
+          uncertainty. Our approach moves beyond fixed, vehicle-centric strategies and continuously adapts
+          to evolving pedestrian behaviours that exploit signal timings to minimise their own travel time.
+          By modelling interactions between pedestrians, traffic signals, and connected autonomous vehicles,
+          the proposed framework learns robust control policies that improve both intersection efficiency
+          and safety. This research establishes a new foundation for intelligent, pedestrian-aware traffic
+          management in next-generation smart cities.
         image: "images/people/nadeeshan.jpeg"
         initials: "ND"
       - name: "Dinuka de Zoysa"
@@ -29,6 +61,21 @@ groups:
         title: "PhD Student (2024-)"
         note: "Co-supervised with N. Lipovetzky."
         url: "https://github.com/Dadams2"
+        bio: >-
+          Automated Scientific Insight Discovery with Goal Directed AI. Exploratory Data Analysis (EDA) is
+          essential for uncovering insights in large-scale datasets, yet current systems disrupt analytical
+          workflows by requiring explicit feedback through tuple rankings and example validation. This
+          project introduces implicit recommendation systems that understand analyst intent through natural
+          exploration behavior, observing queries, interactions, and exploration sequences without
+          interrupting cognitive flow. Our approach employs a novel multi-dimensional interestingness
+          contribution scheme combining association rule mining, diversity-based summarization, and temporal
+          behavioral modeling to predict analytical interest. Unlike similarity-based systems, our framework
+          simultaneously captures structural patterns, distributional anomalies, temporal trends, and
+          compositional relationships, adapting in real-time as goals evolve. Validation on SDSS astronomical
+          query logs and SIMBA benchmarks demonstrates consistent improvements over single-objective
+          approaches, particularly for complex analytical workloads. This vision addresses fundamental
+          challenges in real-time interest adaptation, interpretability, and cross-domain transfer for
+          database exploration. [Vision paper - in preparation]
         image: "images/people/david.jpg"
         initials: "DA"
       - name: "Lankadinee Rathuwadu"
@@ -41,6 +88,13 @@ groups:
         title: "PhD Student (since 2023)"
         note: "Co-supervised with T. Pham and M. Fu."
         url: "https://scholar.google.com/citations?user=lrxr98IAAAAJ&hl"
+        bio: >-
+          Fuzzing and Human-in-the-loop fuzzing. My research addresses the coverage-plateau problem in
+          grey-box fuzzing by leveraging query-based code databases to introspect fuzzing results. By
+          identifying and bypassing fuzz blockers that impede discovery, I aim to make vulnerability
+          detection more effective. Furthermore, I integrate Large Language Models (LLMs) to automate
+          blocker analysis, reducing manual overhead and advancing the efficiency of human-in-the-loop
+          fuzzing workflows.
         image: "images/people/wentao.jpg"
         initials: "WG"
       - name: "Dimuthu Kariyawasan"
@@ -58,6 +112,16 @@ groups:
       - name: "Yiyan Li"
         title: "Visiting PhD Student"
         url: "https://orcid.org/0009-0007-2620-7623"
+        bio: >-
+          Research on Intelligent Database Performance Tuning. My research focuses on intelligent and
+          automated database performance tuning, aiming to reduce the reliance on manual expertise in
+          configuring complex database systems. I study how machine learning and large language models can
+          be used to understand workloads, system states, and configuration interactions, and to make
+          adaptive tuning decisions in a principled manner. By modeling and automating the iterative
+          reasoning process traditionally performed by human DBAs, my work seeks to improve database
+          performance across diverse workloads while lowering tuning cost and improving robustness.
+          Ultimately, this research aims to build practical, learning-based tuning systems that can
+          generalize across benchmarks and real-world environments.
         image: "images/people/yiyan.jpg"
         initials: "YL"
   - title: "Alumni"

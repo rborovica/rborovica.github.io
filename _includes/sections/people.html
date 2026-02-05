@@ -11,6 +11,14 @@
       <h3 class="person-name">{{ people.lead.name }}</h3>
       <p class="person-title">{{ people.lead.title }}</p>
     </div>
+    {% if people.lead.bio %}
+      {% assign bio_text = people.lead.bio | strip %}
+      {% assign first_sentence = bio_text | split: ". " | first %}
+      {% assign remainder = bio_text | remove_first: first_sentence | remove_first: ". " | remove_first: "." | strip %}
+      <div class="person-bio">
+        <strong>{{ first_sentence }}.</strong>{% if remainder != "" %} {{ remainder }}{% endif %}
+      </div>
+    {% endif %}
   </a>
 </div>
 
@@ -30,6 +38,14 @@
             <p class="person-note">{{ person.note }}</p>
           {% endif %}
         </div>
+        {% if person.bio %}
+          {% assign bio_text = person.bio | strip %}
+          {% assign first_sentence = bio_text | split: ". " | first %}
+          {% assign remainder = bio_text | remove_first: first_sentence | remove_first: ". " | remove_first: "." | strip %}
+          <div class="person-bio">
+            <strong>{{ first_sentence }}.</strong>{% if remainder != "" %} {{ remainder }}{% endif %}
+          </div>
+        {% endif %}
       </a>
     {% endfor %}
   </div>

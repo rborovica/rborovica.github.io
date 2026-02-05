@@ -4,12 +4,7 @@
     <h3>{{ footer.lab_name }}</h3>
     <p>{{ footer.motto }}</p>
   </div>
-  <div>
-    <h3>Quick Links</h3>
-    <p>{{ footer.quick_links }}</p>
-  </div>
-  <div>
-    <h3>Location</h3>
-    <p>{{ footer.location }}</p>
-  </div>
 </div>
+<p class="footer-copyright">
+  Copyright © 2017-{{ site.time | date: "%Y" }} {{ footer.lab_name }}. All Rights Reserved.
+</p>
