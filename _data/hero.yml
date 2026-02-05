@@ -15,11 +15,7 @@ actions:
     url: "#contact"
     style: "secondary"
 stats:
-  - value: "12+"
+  - value: "auto"
     label: "Active projects"
-  - value: "6"
-    label: "Collaborating labs"
-  - value: "2010"
+  - value: "2017"
     label: "Founded"
-  - value: "PhD / Postdoc"
-    label: "Open positions"

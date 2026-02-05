@@ -1,7 +1,27 @@
 {% assign news = site.data.news %}
+{% assign news_items = news.items %}
 <h2>{{ news.heading }}</h2>
-<div class="list">
-  {% for item in news.items %}
-    <div class="list-item">{{ item }}</div>
-  {% endfor %}
+<div class="news-ticker" style="--news-count: {{ news_items | size }};">
+  <div class="news-track">
+    {% for item in news_items %}
+      {% assign text = item.text | default: item %}
+      {% assign date = item.date %}
+      <div class="list-item">
+        <span class="news-text">{{ text }}</span>
+        {% if date %}
+          <span class="news-date">{{ date }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+    {% for item in news_items %}
+      {% assign text = item.text | default: item %}
+      {% assign date = item.date %}
+      <div class="list-item">
+        <span class="news-text">{{ text }}</span>
+        {% if date %}
+          <span class="news-date">{{ date }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
 </div>

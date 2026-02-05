@@ -11,9 +11,14 @@
     </div>
   </div>
   <div class="stat-grid">
+    {% assign projects_count = site.data.projects.projects | size %}
     {% for stat in hero.stats %}
       <div class="stat">
-        <span>{{ stat.value }}</span>
+        {% if stat.label == "Active projects" %}
+          <span>{{ projects_count }}</span>
+        {% else %}
+          <span>{{ stat.value }}</span>
+        {% endif %}
         <span>{{ stat.label }}</span>
       </div>
     {% endfor %}

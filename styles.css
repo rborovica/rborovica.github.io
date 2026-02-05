@@ -317,6 +317,65 @@ p {
   gap: 16px;
 }
 
+.news-ticker {
+  --news-item-height: 72px;
+  --news-gap: 16px;
+  --news-step: calc(var(--news-item-height) + var(--news-gap));
+  height: calc(var(--news-step) * 2 - var(--news-gap));
+  overflow: hidden;
+}
+
+.news-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--news-gap);
+  animation: news-scroll linear infinite;
+  animation-duration: calc(var(--news-count) * 3s);
+  counter-reset: news;
+}
+
+.news-ticker .list-item {
+  height: var(--news-item-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  padding-left: 56px;
+  counter-increment: news;
+}
+
+.news-ticker .list-item::before {
+  content: counter(news) ".";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  text-align: right;
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.news-text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: rgba(29, 31, 28, 0.6);
+  white-space: nowrap;
+}
+
+@keyframes news-scroll {
+  to {
+    transform: translateY(calc(-1 * var(--news-step) * var(--news-count)));
+  }
+}
+
 .list-item {
   padding: 16px 20px;
   border-radius: 18px;
