@@ -1,17 +1,43 @@
 heading: "Projects"
 intro: "Selected projects from our research program."
 projects:
-  - title: "Learned indexes with Machine Learning"
-    text: "ML models approximate data distributions to replace traditional indexes with faster retrieval and lower memory."
-  - title: "Database performance tuning with Multi-armed Bandits"
-    text: "Automated physical design tuning for ad hoc workloads, with statistical guarantees on design quality."
-  - title: "Data-driven traffic flow optimization with Reinforcement Learning"
-    text: "Algorithms for ride-sharing dispatch and road network configuration that reduce congestion and wait time."
-  - title: "Improving data quality through domain-driven imputation"
-    text: "Use spatial and domain properties to impute missing values and improve real-world data reliability."
-  - title: "Cheap data analysis with Skipper"
-    text: "Cold-storage query processing with cache management and I/O scheduling to cut analytics cost."
-  - title: "Predictable query performance with Smooth Scan"
-    text: "Runtime morphing between access paths to avoid bad plans and stabilize performance."
-  - title: "Fast data exploration with NoDB"
-    text: "Query raw files without loading; build indexes and caches incrementally from query feedback."
+  - title: "Automated Database Tuning"
+    text: >-
+      This project focuses on automatically optimizing database performance, reducing reliance on costly
+      expert intervention. We investigate both physical design tuning (e.g., indexes and materialized
+      views) and configuration tuning, leveraging techniques such as multi-armed bandits and large
+      language models.
+    pubs: "[ICDE'21, ICDM'21, VLDB'22, TKDE'23, KAIS'23, ICDM'24, SIGMOD'26, MLSys'26]"
+  - title: "(Machine) Learned Indexes"
+    text: >-
+      In this line of work, we exploit data distributions to construct compact, ML-based indexes for
+      faster and more efficient data retrieval. We study the efficiency and practicality of existing
+      learned index models and propose new algorithms suitable for on-disk deployment, a critical
+      requirement for industrial adoption. This line of work also includes learned spatial indexes and
+      spatial query processing, including semantic search.
+    pubs: "[ADC'20, VLDB'20, SIGMOD'23, ICDE'23, ICDE'24, 2 x VLDB'25, ADC'25 x 2, ICDE'26]"
+  - title: "Semantics-Driven Prefetching"
+    text: >-
+      This project investigates how to anticipate and preload relevant data to reduce query latency and
+      improve exploration efficiency. We leverage data and query semantics to predict complex access
+      patterns that arise during exploratory data analysis, particularly in scientific domains.
+    pubs: "[VLDB'24]"
+  - title: "Cardinality Estimation"
+    text: >-
+      This project aims to predict query result sizes in order to improve query planning and execution
+      performance. Our approach leverages copulas from statistical machine learning theory to model
+      complex data correlations more accurately.
+    pubs: "[ICDE'26]"
+  - title: "Predicting Next Actions in Data Exploration"
+    text: >-
+      This project focuses on learning and recommending relevant next steps during interactive data
+      exploration, guiding users through complex analysis workflows and reducing the cognitive and
+      technical burden of exploratory analysis.
+    pubs: "[CIKM'25]"
+  - title: "Learning-Based Traffic Optimisation"
+    text: >-
+      This line of work develops learning-based methods for traffic modelling, prediction, and
+      optimisation in intelligent transportation systems. We leverage data-driven and machine learning
+      techniques to support traffic management, routing, and decision making under dynamic and uncertain
+      conditions.
+    pubs: "[SIGSPATIAL'20, EMCL/PKDD'20, 3 x SIGSPATIAL'22, IV'22, TIST'23, PAKDD'24, SIGSPATIAL'25]"

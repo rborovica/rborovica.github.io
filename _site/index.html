@@ -75,7 +75,7 @@
     
       <div class="stat">
         
-          <span>7</span>
+          <span>6</span>
         
         <span>Active projects</span>
       </div>
@@ -100,22 +100,22 @@
               <div class="container">
                 
 <h2>About the Lab</h2>
-<p>The Danais Lab focuses on data integration, analytic discovery, and intelligent systems engineering. We build next-generation database architectures and scalable data infrastructure that transform heterogeneous data into insight.</p>
+<p>The DANAIS (Data Nexus for Analytics &amp; Intelligent Systems) Lab develops data and AI systems that turn large, complex datasets into reliable insight. Our research spans data management, analytics, and intelligent systems, with a focus on scalable and trustworthy technologies that support data exploration and decision-making. By bridging theory and real-world applications, DANAIS enables data-driven intelligence across scientific, industrial, and societal domains.</p>
 <div class="card-grid">
   
     <article class="card">
       <h3>Vision</h3>
-      <p>Unlock value from heterogeneous data sources across domains.</p>
+      <p>Turn vast, complex data into reliable insight that advances science, industry, and society.</p>
     </article>
   
     <article class="card">
       <h3>Approach</h3>
-      <p>Design database architectures and analytic frameworks that connect integration to automated discovery.</p>
+      <p>Bridge theory and practice to build scalable, trustworthy data and AI systems for exploration and decision-making.</p>
     </article>
   
     <article class="card">
       <h3>Values</h3>
-      <p>Grounded in robust systems design and data science with a focus on practical impact.</p>
+      <p>Rigor, responsibility, and elegance in systems that people can trust.</p>
     </article>
   
 </div>
@@ -131,12 +131,14 @@
               <div class="container">
                 
 <h2>News</h2>
-<div class="news-ticker" style="--news-count: 3;">
+
+<div class="news-ticker" data-visible="3" style="--news-visible: 3;">
   <div class="news-track">
     
       
       
       <div class="list-item">
+        <span class="news-index">1.</span>
         <span class="news-text">One paper has been accepted to MLSys 2026.</span>
         
           <span class="news-date">Jan 30, 2026</span>
@@ -146,6 +148,17 @@
       
       
       <div class="list-item">
+        <span class="news-index">2.</span>
+        <span class="news-text">One paper has been accepted to AAAI 2026.</span>
+        
+          <span class="news-date">Nov 10, 2025</span>
+        
+      </div>
+    
+      
+      
+      <div class="list-item">
+        <span class="news-index">3.</span>
         <span class="news-text">Two papers have been accepted to ADC 2025.</span>
         
           <span class="news-date">Oct 28, 2025</span>
@@ -155,34 +168,7 @@
       
       
       <div class="list-item">
-        <span class="news-text">Two papers have been accepted to ICDE 2026 (Round 1).</span>
-        
-          <span class="news-date">Oct 20, 2025</span>
-        
-      </div>
-    
-    
-      
-      
-      <div class="list-item">
-        <span class="news-text">One paper has been accepted to MLSys 2026.</span>
-        
-          <span class="news-date">Jan 30, 2026</span>
-        
-      </div>
-    
-      
-      
-      <div class="list-item">
-        <span class="news-text">Two papers have been accepted to ADC 2025.</span>
-        
-          <span class="news-date">Oct 28, 2025</span>
-        
-      </div>
-    
-      
-      
-      <div class="list-item">
+        <span class="news-index">4.</span>
         <span class="news-text">Two papers have been accepted to ICDE 2026 (Round 1).</span>
         
           <span class="news-date">Oct 20, 2025</span>
@@ -207,38 +193,51 @@
 <div class="card-grid">
   
     <article class="card">
-      <h3>Learned indexes with Machine Learning</h3>
-      <p>ML models approximate data distributions to replace traditional indexes with faster retrieval and lower memory.</p>
+      <h3>Automated Database Tuning</h3>
+      <p>This project focuses on automatically optimizing database performance, reducing reliance on costly expert intervention. We investigate both physical design tuning (e.g., indexes and materialized views) and configuration tuning, leveraging techniques such as multi-armed bandits and large language models.</p>
+      
+        <p class="project-pubs"><strong>[ICDE'21, ICDM'21, VLDB'22, TKDE'23, KAIS'23, ICDM'24, SIGMOD'26, MLSys'26]</strong></p>
+      
     </article>
   
     <article class="card">
-      <h3>Database performance tuning with Multi-armed Bandits</h3>
-      <p>Automated physical design tuning for ad hoc workloads, with statistical guarantees on design quality.</p>
+      <h3>(Machine) Learned Indexes</h3>
+      <p>In this line of work, we exploit data distributions to construct compact, ML-based indexes for faster and more efficient data retrieval. We study the efficiency and practicality of existing learned index models and propose new algorithms suitable for on-disk deployment, a critical requirement for industrial adoption. This line of work also includes learned spatial indexes and spatial query processing, including semantic search.</p>
+      
+        <p class="project-pubs"><strong>[ADC'20, VLDB'20, SIGMOD'23, ICDE'23, ICDE'24, 2 x VLDB'25, ADC'25 x 2, ICDE'26]</strong></p>
+      
     </article>
   
     <article class="card">
-      <h3>Data-driven traffic flow optimization with Reinforcement Learning</h3>
-      <p>Algorithms for ride-sharing dispatch and road network configuration that reduce congestion and wait time.</p>
+      <h3>Semantics-Driven Prefetching</h3>
+      <p>This project investigates how to anticipate and preload relevant data to reduce query latency and improve exploration efficiency. We leverage data and query semantics to predict complex access patterns that arise during exploratory data analysis, particularly in scientific domains.</p>
+      
+        <p class="project-pubs"><strong>[VLDB'24]</strong></p>
+      
     </article>
   
     <article class="card">
-      <h3>Improving data quality through domain-driven imputation</h3>
-      <p>Use spatial and domain properties to impute missing values and improve real-world data reliability.</p>
+      <h3>Cardinality Estimation</h3>
+      <p>This project aims to predict query result sizes in order to improve query planning and execution performance. Our approach leverages copulas from statistical machine learning theory to model complex data correlations more accurately.</p>
+      
+        <p class="project-pubs"><strong>[ICDE'26]</strong></p>
+      
     </article>
   
     <article class="card">
-      <h3>Cheap data analysis with Skipper</h3>
-      <p>Cold-storage query processing with cache management and I/O scheduling to cut analytics cost.</p>
+      <h3>Predicting Next Actions in Data Exploration</h3>
+      <p>This project focuses on learning and recommending relevant next steps during interactive data exploration, guiding users through complex analysis workflows and reducing the cognitive and technical burden of exploratory analysis.</p>
+      
+        <p class="project-pubs"><strong>[CIKM'25]</strong></p>
+      
     </article>
   
     <article class="card">
-      <h3>Predictable query performance with Smooth Scan</h3>
-      <p>Runtime morphing between access paths to avoid bad plans and stabilize performance.</p>
-    </article>
-  
-    <article class="card">
-      <h3>Fast data exploration with NoDB</h3>
-      <p>Query raw files without loading; build indexes and caches incrementally from query feedback.</p>
+      <h3>Learning-Based Traffic Optimisation</h3>
+      <p>This line of work develops learning-based methods for traffic modelling, prediction, and optimisation in intelligent transportation systems. We leverage data-driven and machine learning techniques to support traffic management, routing, and decision making under dynamic and uncertain conditions.</p>
+      
+        <p class="project-pubs"><strong>[SIGSPATIAL'20, EMCL/PKDD'20, 3 x SIGSPATIAL'22, IV'22, TIST'23, PAKDD'24, SIGSPATIAL'25]</strong></p>
+      
     </article>
   
 </div>
@@ -270,7 +269,7 @@
       
       
       <div class="person-bio">
-        <strong>I am an Associate Professor in Data Analytics and ARC DECRA Fellow in the School of Computing and Information Systems (CIS), as well as Associate Dean (Diversity and Inclusion) for the Faculty of Engineering and IT at the University of Melbourne.</strong> My research lies at the intersection of database systems, machine learning and artificial intelligence, data-driven optimisation and analytics To optimize performance and cost of data analytics services, I envision database systems as adaptive self-driving engines able to adjust their query execution strategy at runtime to fit the characteristics of the queries, data and underlying hardware. I am also interested in the topics of scientific data management, data exploration, query optimization, physical database design, data cleaning, and data-driven (traffic) optimization. The quality and impact of my work is recognised with several notable awards, including L'Oreal-UNESCO for Women in Science Fellowship in 2023, 2x Research Excellence Awards (for Early Career Researcher in 2022 and Mid Career Researcher in 2023), 2x Excellence in Teaching and Learning Awards (in 2018 and 2020), Google Research Inclusion Award in 2021, as well as Test of Time Award (at SIGMOD 2022). In 2024, I was recognised as a Victorian Young Tall Poppy, and, in 2025, I was selected as the winner of Women in AI Award for the APAC region (in the DATA category).
+        <strong>I am an Associate Professor in Data Analytics and ARC DECRA Fellow in the School of Computing and Information Systems, and Associate Dean (Diversity and Inclusion) for the Faculty of Engineering and IT at the University of Melbourne.</strong> My research lies at the intersection of database systems, machine learning, and AI, with a focus on adaptive, self-driving data systems for efficient and cost-effective analytics My work has been recognised with multiple awards, including the L'Oréal-UNESCO for Women in Science Fellowship, a SIGMOD Test of Time Award, and the Women in AI Award (APAC).
       </div>
     
   </a>
@@ -353,7 +352,7 @@
           
           
           <div class="person-bio">
-            <strong>Automated Scientific Insight Discovery with Goal Directed AI.</strong> Exploratory Data Analysis (EDA) is essential for uncovering insights in large-scale datasets, yet current systems disrupt analytical workflows by requiring explicit feedback through tuple rankings and example validation This project introduces implicit recommendation systems that understand analyst intent through natural exploration behavior, observing queries, interactions, and exploration sequences without interrupting cognitive flow. Our approach employs a novel multi-dimensional interestingness contribution scheme combining association rule mining, diversity-based summarization, and temporal behavioral modeling to predict analytical interest. Unlike similarity-based systems, our framework simultaneously captures structural patterns, distributional anomalies, temporal trends, and compositional relationships, adapting in real-time as goals evolve. Validation on SDSS astronomical query logs and SIMBA benchmarks demonstrates consistent improvements over single-objective approaches, particularly for complex analytical workloads. This vision addresses fundamental challenges in real-time interest adaptation, interpretability, and cross-domain transfer for database exploration. [Vision paper - in preparation]
+            <strong>Automated Scientific Insight Discovery with Goal Directed AI.</strong> Exploratory Data Analysis (EDA) is essential for uncovering insights in large-scale datasets, yet current systems disrupt analytical workflows by requiring explicit feedback through tuple rankings and example validation This project introduces implicit recommendation systems that understand analyst intent through natural exploration behavior, observing queries, interactions, and exploration sequences without interrupting cognitive flow. Our approach employs a novel multi-dimensional interestingness contribution scheme combining association rule mining, diversity-based summarization, and temporal behavioral modeling to predict analytical interest. Unlike similarity-based systems, our framework simultaneously captures structural patterns, distributional anomalies, temporal trends, and compositional relationships, adapting in real-time as goals evolve. Validation on SDSS astronomical query logs and SIMBA benchmarks demonstrates consistent improvements over single-objective approaches, particularly for complex analytical workloads. This vision addresses fundamental challenges in real-time interest adaptation, interpretability, and cross-domain transfer for database exploration.
           </div>
         
       </a>
@@ -805,17 +804,29 @@
   
     <article class="card">
       <h3>Email</h3>
-      <p>yourname@university.edu</p>
+      <p>renata [dot] borovica [at] unimelb.edu.au</p>
+      
     </article>
   
     <article class="card">
       <h3>Join Us</h3>
       <p>Open positions and how to apply.</p>
+      
     </article>
   
     <article class="card">
       <h3>Location</h3>
       <p>700 Swanston Street, Carlton, Melbourne.</p>
+      
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=700+Swanston+Street,+Carlton,+Melbourne&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" title="Map: 700 Swanston Street, Carlton, Melbourne.">
+          </iframe>
+          
+            <a class="map-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=700+Swanston+Street,+Carlton,+Melbourne" target="_blank" rel="noopener" aria-label="Open location in Google Maps">
+            </a>
+          
+        </div>
+      
     </article>
   
 </div>

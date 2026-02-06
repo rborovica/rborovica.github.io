@@ -2,6 +2,8 @@ heading: "News"
 items:
   - text: "One paper has been accepted to MLSys 2026."
     date: "Jan 30, 2026"
+  - text: "One paper has been accepted to AAAI 2026."
+    date: "Nov 10, 2025"
   - text: "Two papers have been accepted to ADC 2025."
     date: "Oct 28, 2025"
   - text: "Two papers have been accepted to ICDE 2026 (Round 1)."

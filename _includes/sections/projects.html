@@ -6,6 +6,9 @@
     <article class="card">
       <h3>{{ card.title }}</h3>
       <p>{{ card.text }}</p>
+      {% if card.pubs %}
+        <p class="project-pubs"><strong>{{ card.pubs }}</strong></p>
+      {% endif %}
     </article>
   {% endfor %}
 </div>

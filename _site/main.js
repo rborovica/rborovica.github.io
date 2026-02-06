@@ -58,4 +58,82 @@
       }
     });
   });
+
+  const initNewsTicker = () => {
+    const ticker = document.querySelector(".news-ticker");
+    if (!ticker) {
+      return;
+    }
+
+    const track = ticker.querySelector(".news-track");
+    if (!track) {
+      return;
+    }
+
+    const items = () => Array.from(track.children);
+    const visibleCount = Number(ticker.dataset.visible || 2);
+    ticker.style.setProperty("--news-visible", `${visibleCount}`);
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReduced || items().length <= visibleCount) {
+      return;
+    }
+
+    const getGap = () => {
+      const styles = window.getComputedStyle(track);
+      const gapValue = styles.rowGap || styles.gap || "0px";
+      const parsed = parseFloat(gapValue);
+      return Number.isNaN(parsed) ? 0 : parsed;
+    };
+
+    let isAnimating = false;
+
+    const stepOnce = () => {
+      if (isAnimating) {
+        return;
+      }
+
+      const first = track.children[0];
+      if (!first) {
+        return;
+      }
+
+      const gap = getGap();
+      const step = first.getBoundingClientRect().height + gap;
+      isAnimating = true;
+      track.style.transition = "transform 0.6s ease";
+      track.style.transform = `translateY(-${step}px)`;
+
+      const onEnd = () => {
+        track.removeEventListener("transitionend", onEnd);
+        track.style.transition = "none";
+        track.style.transform = "translateY(0)";
+        track.appendChild(first);
+        isAnimating = false;
+      };
+
+      track.addEventListener("transitionend", onEnd, { once: true });
+    };
+
+    const intervalMs = 2600;
+    let timer = window.setInterval(stepOnce, intervalMs);
+
+    const stop = () => {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    };
+
+    const start = () => {
+      if (!timer) {
+        timer = window.setInterval(stepOnce, intervalMs);
+      }
+    };
+
+    ticker.addEventListener("mouseenter", stop);
+    ticker.addEventListener("mouseleave", start);
+  };
+
+  initNewsTicker();
 })();

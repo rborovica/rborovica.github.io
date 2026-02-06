@@ -7,19 +7,11 @@ lead:
   initials: "RB"
   bio: >-
     I am an Associate Professor in Data Analytics and ARC DECRA Fellow in the School of Computing and
-    Information Systems (CIS), as well as Associate Dean (Diversity and Inclusion) for the Faculty of
-    Engineering and IT at the University of Melbourne. My research lies at the intersection of database
-    systems, machine learning and artificial intelligence, data-driven optimisation and analytics. To
-    optimize performance and cost of data analytics services, I envision database systems as adaptive
-    self-driving engines able to adjust their query execution strategy at runtime to fit the characteristics
-    of the queries, data and underlying hardware. I am also interested in the topics of scientific data
-    management, data exploration, query optimization, physical database design, data cleaning, and
-    data-driven (traffic) optimization. The quality and impact of my work is recognised with several notable
-    awards, including L'Oreal-UNESCO for Women in Science Fellowship in 2023, 2x Research Excellence Awards
-    (for Early Career Researcher in 2022 and Mid Career Researcher in 2023), 2x Excellence in Teaching and
-    Learning Awards (in 2018 and 2020), Google Research Inclusion Award in 2021, as well as Test of Time
-    Award (at SIGMOD 2022). In 2024, I was recognised as a Victorian Young Tall Poppy, and, in 2025, I was
-    selected as the winner of Women in AI Award for the APAC region (in the DATA category).
+    Information Systems, and Associate Dean (Diversity and Inclusion) for the Faculty of Engineering and
+    IT at the University of Melbourne. My research lies at the intersection of database systems, machine
+    learning, and AI, with a focus on adaptive, self-driving data systems for efficient and cost-effective
+    analytics. My work has been recognised with multiple awards, including the L'Oréal-UNESCO for Women in
+    Science Fellowship, a SIGMOD Test of Time Award, and the Women in AI Award (APAC).
 groups:
   - title: "Current Members"
     people:
@@ -75,7 +67,7 @@ groups:
           query logs and SIMBA benchmarks demonstrates consistent improvements over single-objective
           approaches, particularly for complex analytical workloads. This vision addresses fundamental
           challenges in real-time interest adaptation, interpretability, and cross-domain transfer for
-          database exploration. [Vision paper - in preparation]
+          database exploration.
         image: "images/people/david.jpg"
         initials: "DA"
       - name: "Lankadinee Rathuwadu"

@@ -8,6 +8,26 @@
     <article class="card">
       <h3>{{ card.title }}</h3>
       <p>{{ card.text }}</p>
+      {% if card.map_embed %}
+        <div class="map-embed">
+          <iframe
+            src="{{ card.map_embed }}"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Map: {{ card.text }}">
+          </iframe>
+          {% if card.map_link %}
+            <a
+              class="map-overlay"
+              href="{{ card.map_link }}"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open location in Google Maps">
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
     </article>
   {% endfor %}
 </div>
