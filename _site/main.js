@@ -115,7 +115,7 @@
       track.addEventListener("transitionend", onEnd, { once: true });
     };
 
-    const intervalMs = 2600;
+    const intervalMs = 1300;
     let timer = window.setInterval(stepOnce, intervalMs);
 
     const stop = () => {

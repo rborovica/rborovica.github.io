@@ -3,11 +3,18 @@
 
 <div class="list">
   {% for year in publications.years %}
-    <div class="pub-year">
+    <div class="pub-year" id="pub-year-{{ year.year }}">
       <h3>{{ year.year }}</h3>
       <div class="list list-numbered">
+        {% assign seen_venues = "" %}
         {% for entry in year.entries %}
-          <div class="list-item"><span class="pub-venue">{{ entry.venue }}</span> {{ entry.title }}. {{ entry.authors }}.{% if entry.links %}{% for link in entry.links %} <a class="pub-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}{% endif %}{% if entry.note %} {{ entry.note }}{% endif %}</div>
+          {% assign venue_slug = entry.venue | slugify %}
+          {% assign venue_token = "|" | append: venue_slug | append: "|" %}
+          {% unless seen_venues contains venue_token %}
+            {% assign seen_venues = seen_venues | append: venue_token %}
+            <span class="pub-anchor" id="pub-{{ year.year }}-{{ venue_slug }}"></span>
+          {% endunless %}
+          <div class="list-item" id="pub-{{ year.year }}-{{ venue_slug }}-{{ forloop.index }}"><span class="pub-venue">{{ entry.venue }}</span> {{ entry.title }}. {{ entry.authors }}.{% if entry.links %}{% for link in entry.links %} <a class="pub-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}{% endif %}{% if entry.note %} {{ entry.note }}{% endif %}</div>
         {% endfor %}
       </div>
     </div>

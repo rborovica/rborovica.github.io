@@ -221,6 +221,17 @@ p {
   margin-top: 12px;
 }
 
+.pub-anchor {
+  display: block;
+  height: 0;
+  scroll-margin-top: 220px;
+}
+
+.pub-year,
+.list-item {
+  scroll-margin-top: 220px;
+}
+
 .people-lead {
   margin-bottom: 32px;
 }
@@ -429,6 +440,13 @@ p {
 .map-overlay {
   position: absolute;
   inset: 0;
+}
+
+.acronym-initial {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 2px solid var(--forest);
+  padding-bottom: 2px;
 }
 
 .list-numbered {

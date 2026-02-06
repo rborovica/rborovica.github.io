@@ -7,5 +7,5 @@ cards:
     text: "Open positions and how to apply."
   - title: "Location"
     text: "700 Swanston Street, Carlton, Melbourne."
-    map_embed: "https://www.google.com/maps?q=700+Swanston+Street,+Carlton,+Melbourne&output=embed"
-    map_link: "https://www.google.com/maps/search/?api=1&query=700+Swanston+Street,+Carlton,+Melbourne"
+    map_embed: "https://www.google.com/maps?q=Melbourne+Connect,+700+Swanston+Street,+Carlton+VIC+3053,+Australia&output=embed"
+    map_link: "https://www.google.com/maps/search/?api=1&query=Melbourne+Connect,+700+Swanston+Street,+Carlton+VIC+3053,+Australia"

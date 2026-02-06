@@ -1,12 +1,9 @@
 tagline: "Data Integration / Analytic Discovery / Intelligent Systems"
 heading: "We build data systems that turn complex information into actionable insight."
 body: >-
-  The Danais Lab (Data Nexus for Analytics & Intelligent Systems) advances
-  foundational and applied research at the intersection of data integration,
-  analytic discovery, and intelligent systems engineering. We develop
-  next-generation database architectures, scalable data infrastructure, and
-  analytic frameworks that automate the transformation of complex
-  information into actionable insight.
+  The DANAIS (<span class="acronym-initial">D</span><span class="acronym-initial">a</span>ta <span class="acronym-initial">N</span>exus for
+  <span class="acronym-initial">A</span>nalytics &amp; <span class="acronym-initial">I</span>ntelligent
+  <span class="acronym-initial">S</span>ystems) Lab develops data and AI systems that turn large, complex datasets into reliable insight. Our research spans data management, analytics, and intelligent systems, with a focus on scalable and trustworthy technologies that support data exploration and decision-making. By bridging theory and real-world applications, DANAIS enables data-driven intelligence across scientific, industrial, and societal domains.
 actions:
   - label: "Explore Projects"
     url: "#projects"

@@ -7,7 +7,31 @@ projects:
       expert intervention. We investigate both physical design tuning (e.g., indexes and materialized
       views) and configuration tuning, leveraging techniques such as multi-armed bandits and large
       language models.
-    pubs: "[ICDE'21, ICDM'21, VLDB'22, TKDE'23, KAIS'23, ICDM'24, SIGMOD'26, MLSys'26]"
+    pubs:
+      - label: "ICDE'21"
+        year: 2021
+        venue: "ICDE"
+      - label: "ICDM'21"
+        year: 2021
+        venue: "ICDM"
+      - label: "VLDB'22"
+        year: 2022
+        venue: "VLDB"
+      - label: "TKDE'23"
+        year: 2023
+        venue: "TKDE"
+      - label: "KAIS'23"
+        year: 2023
+        venue: "KAIS"
+      - label: "ICDM'24"
+        year: 2024
+        venue: "ICDM"
+      - label: "SIGMOD'26"
+        year: 2026
+        venue: "SIGMOD"
+      - label: "MLSys'26"
+        year: 2026
+        venue: "MLSys"
   - title: "(Machine) Learned Indexes"
     text: >-
       In this line of work, we exploit data distributions to construct compact, ML-based indexes for
@@ -15,29 +39,83 @@ projects:
       learned index models and propose new algorithms suitable for on-disk deployment, a critical
       requirement for industrial adoption. This line of work also includes learned spatial indexes and
       spatial query processing, including semantic search.
-    pubs: "[ADC'20, VLDB'20, SIGMOD'23, ICDE'23, ICDE'24, 2 x VLDB'25, ADC'25 x 2, ICDE'26]"
+    pubs:
+      - label: "ADC'20"
+        year: 2020
+        venue: "ADC"
+      - label: "VLDB'20"
+        year: 2020
+        venue: "VLDB"
+      - label: "SIGMOD'23"
+        year: 2023
+        venue: "SIGMOD"
+      - label: "ICDE'23"
+        year: 2023
+        venue: "ICDE"
+      - label: "ICDE'24"
+        year: 2024
+        venue: "ICDE"
+      - label: "VLDB'25 x 2"
+        year: 2025
+        venue: "VLDB"
+      - label: "ADC'25 x 2"
+        year: 2025
+        venue: "ADC"
+      - label: "ICDE'26"
+        year: 2026
+        venue: "ICDE"
   - title: "Semantics-Driven Prefetching"
     text: >-
       This project investigates how to anticipate and preload relevant data to reduce query latency and
       improve exploration efficiency. We leverage data and query semantics to predict complex access
       patterns that arise during exploratory data analysis, particularly in scientific domains.
-    pubs: "[VLDB'24]"
+    pubs:
+      - label: "VLDB'24"
+        year: 2024
+        venue: "VLDB"
   - title: "Cardinality Estimation"
     text: >-
       This project aims to predict query result sizes in order to improve query planning and execution
       performance. Our approach leverages copulas from statistical machine learning theory to model
       complex data correlations more accurately.
-    pubs: "[ICDE'26]"
+    pubs:
+      - label: "ICDE'26"
+        year: 2026
+        venue: "ICDE"
   - title: "Predicting Next Actions in Data Exploration"
     text: >-
       This project focuses on learning and recommending relevant next steps during interactive data
       exploration, guiding users through complex analysis workflows and reducing the cognitive and
       technical burden of exploratory analysis.
-    pubs: "[CIKM'25]"
+    pubs:
+      - label: "CIKM'25"
+        year: 2025
+        venue: "CIKM"
   - title: "Learning-Based Traffic Optimisation"
     text: >-
       This line of work develops learning-based methods for traffic modelling, prediction, and
       optimisation in intelligent transportation systems. We leverage data-driven and machine learning
       techniques to support traffic management, routing, and decision making under dynamic and uncertain
       conditions.
-    pubs: "[SIGSPATIAL'20, EMCL/PKDD'20, 3 x SIGSPATIAL'22, IV'22, TIST'23, PAKDD'24, SIGSPATIAL'25]"
+    pubs:
+      - label: "SIGSPATIAL'20"
+        year: 2020
+        venue: "SIGSPATIAL"
+      - label: "ECML/PKDD'20"
+        year: 2020
+        venue: "ECML/PKDD"
+      - label: "SIGSPATIAL'22 x 3"
+        year: 2022
+        venue: "SIGSPATIAL"
+      - label: "IV'22"
+        year: 2022
+        venue: "IV"
+      - label: "TIST'23"
+        year: 2023
+        venue: "TIST"
+      - label: "PAKDD'24"
+        year: 2024
+        venue: "PAKDD"
+      - label: "SIGSPATIAL'25"
+        year: 2025
+        venue: "SIGSPATIAL"
