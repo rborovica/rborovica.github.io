@@ -9,7 +9,79 @@
       <h3>{{ card.title }}</h3>
       <p>{{ card.text }}</p>
       {% if card.pubs %}
-        <p class="project-pubs"><strong>[{% for pub in card.pubs %}{% assign target_year = publications.years | where: "year", pub.year | first %}{% if target_year %}{% assign matching_entries = target_year.entries | where: "venue", pub.venue %}{% if matching_entries.size > 0 %}{% assign venue_slug = pub.venue | slugify %}{% if matching_entries.size > 1 %}{% assign anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug %}{% else %}{% assign anchor_index = "" %}{% for entry in target_year.entries %}{% if entry.venue == pub.venue and anchor_index == "" %}{% assign anchor_index = forloop.index %}{% endif %}{% endfor %}{% assign anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug | append: "-" | append: anchor_index %}{% endif %}<a href="{{ publications_page }}#{{ anchor }}">{{ pub.label }}</a>{% else %}<a href="{{ publications_page }}#publications">{{ pub.label }}</a>{% endif %}{% else %}<a href="{{ publications_page }}#publications">{{ pub.label }}</a>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}]</strong></p>
+        <p class="project-pubs">
+          <strong>[
+            {% for pub in card.pubs %}
+              {% assign target_year = publications.years | where: "year", pub.year | first %}
+              {% assign entry_count = 0 %}
+              {% assign first_entry_index = "" %}
+              {% if target_year %}
+                {% for entry in target_year.entries %}
+                  {% if entry.venue == pub.venue %}
+                    {% assign entry_count = entry_count | plus: 1 %}
+                    {% if first_entry_index == "" %}
+                      {% assign first_entry_index = forloop.index %}
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% assign venue_slug = pub.venue | slugify %}
+              {% if entry_count > 0 %}
+                {% if entry_count > 1 %}
+                  {% assign label_anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug %}
+                {% else %}
+                  {% assign label_anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug | append: "-" | append: first_entry_index %}
+                {% endif %}
+                {% assign label_href = publications_page | append: "#" | append: label_anchor %}
+              {% else %}
+                {% assign label_href = publications_page | append: "#publications" %}
+              {% endif %}
+              <span class="project-pub">
+                <a class="project-pub-label" href="{{ label_href }}">{{ pub.label }}</a>
+                {% if pub.papers %}
+                  <span class="project-pub-icons">
+                    {% for paper in pub.papers %}
+                      {% assign paper_title = paper.title | default: "" %}
+                      {% assign paper_href = paper.url %}
+                      {% if paper_href == nil and paper.anchor %}
+                        {% assign paper_href = publications_page | append: "#" | append: paper.anchor %}
+                      {% endif %}
+                      {% if paper_href == nil and paper.title and target_year %}
+                        {% assign resolved_anchor = "" %}
+                        {% for entry in target_year.entries %}
+                          {% if entry.venue == pub.venue and entry.title == paper.title and resolved_anchor == "" %}
+                            {% assign resolved_anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug | append: "-" | append: forloop.index %}
+                          {% endif %}
+                        {% endfor %}
+                        {% if resolved_anchor != "" %}
+                          {% assign paper_href = publications_page | append: "#" | append: resolved_anchor %}
+                        {% endif %}
+                      {% endif %}
+                      {% if paper_href == nil %}
+                        {% assign paper_href = publications_page | append: "#publications" %}
+                      {% endif %}
+                      <a class="paper-link" href="{{ paper_href }}" data-title="{{ paper_title | escape }}" aria-label="{{ paper_title | escape }}">
+                        <span class="paper-icon" aria-hidden="true"></span>
+                      </a>
+                    {% endfor %}
+                  </span>
+                {% elsif entry_count > 0 %}
+                  <span class="project-pub-icons">
+                    {% for entry in target_year.entries %}
+                      {% if entry.venue == pub.venue %}
+                        {% assign entry_anchor = "pub-" | append: pub.year | append: "-" | append: venue_slug | append: "-" | append: forloop.index %}
+                        <a class="paper-link" href="{{ publications_page }}#{{ entry_anchor }}" data-title="{{ entry.title | escape }}" aria-label="{{ entry.title | escape }}">
+                          <span class="paper-icon" aria-hidden="true"></span>
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </span>
+                {% endif %}
+              </span>
+              {% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          ]</strong>
+        </p>
       {% endif %}
     </article>
   {% endfor %}

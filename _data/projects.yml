@@ -64,6 +64,8 @@ projects:
       - label: "ICDE'26"
         year: 2026
         venue: "ICDE"
+        papers:
+          - title: "Benchmarking RL-Enhanced Spatial Indices Against Traditional, Advanced, and Learned Counterparts"
   - title: "Semantics-Driven Prefetching"
     text: >-
       This project investigates how to anticipate and preload relevant data to reduce query latency and
@@ -82,6 +84,8 @@ projects:
       - label: "ICDE'26"
         year: 2026
         venue: "ICDE"
+        papers:
+          - title: "CoLSE: A Lightweight and Robust Hybrid Learned Model for Single-Table Cardinality Estimation using Joint CDF"
   - title: "Predicting Next Actions in Data Exploration"
     text: >-
       This project focuses on learning and recommending relevant next steps during interactive data
